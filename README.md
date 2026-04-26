@@ -28,6 +28,32 @@ Simular um ambiente real de TI com foco em:
 
 ---
 
+COMANDOS UTILIZADOS:
+
+## 📡 DHCP
+
+- ipconfig
+- ipconfig /release
+- ipconfig /renew
+- ipconfig /all
+
+---
+
+## FILE SERVER
+
+- ping <ip-do-servidor>
+- Acesso ao compartilhamento de rede via Explorer (Win + R)
+  \\servidor\compartilhamento
+  
+---
+
+## GPO
+
+- gpupdate /force
+- gpresult /r
+
+---
+
 # 📡 CHAMADO 01 — DHCP (Cliente sem IP)
 
 ## ⚙️ Pré-configuração do servidor
@@ -80,38 +106,37 @@ Conectividade com a internet restabelecida com sucesso.
 
 # 📁 CHAMADO 02 — FILE SERVER (Acesso negado)
 
-## 🟦 Situação inicial
-Usuário tentando acessar pasta compartilhada na rede.
-
-![Situação inicial](img/file-server/fs-02-erro-acesso.png)
-
----
-
 ## 🟥 Problema
-Acesso negado devido a permissões incorretas no compartilhamento.
+Usuário não conseguia acessar a pasta compartilhada.
 
-![Problema](img/file-server/fs-01-acesso-negado.png)
+![Problema](img/file-server/fs-02-erro-acesso.png)
 
 ---
 
 ## 🔍 Diagnóstico
-Verificação de permissões NTFS e compartilhamento da pasta.
+Permissões incorretas identificadas no compartilhamento.
 
-![Diagnóstico](img/file-server/pasta-compartilhamento.png)
+![Diagnóstico](img/file-server/fs-01-acesso-negado.png)
 
 ---
 
 ## 🟩 Solução
-Correção de permissões NTFS e liberação de acesso ao usuário.
+Correção das permissões da pasta compartilhada.
 
-![Solução](img/file-server/fs-04-permissao-corrigida.png)
+![Solução](img/file-server/permissoes-ok.png)
 
 ---
 
-## 📸 Resultado
-Usuário conseguiu acessar a pasta compartilhada.
+## 📸 Complemento
+Validação do acesso pelo cliente.
 
-![Resultado](img/file-server/fs-03-acesso-cliente.png)  
+![Cliente acesso](img/file-server/fs-03-acesso-cliente.png)
+
+---
+
+## 📸 Resultado final
+Acesso liberado com sucesso.
+
 ![Resultado](img/file-server/fs-05-acesso-ok.png)
 
 ---
