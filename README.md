@@ -1,4 +1,4 @@
-#  Active Directory Lab — Infraestrutura de Rede
+#  Active Directory Lab — Infraestrutura de Redes
 
 Projeto de laboratório simulando um ambiente corporativo com Active Directory e serviços de infraestrutura de rede no Windows Server.
 
@@ -8,13 +8,7 @@ Este projeto é uma **continuação de um ambiente de Active Directory previamen
 
 #  Objetivo
 
-Simular um ambiente real de TI com foco em:
-
-- Active Directory (AD DS)
-- DHCP Server
-- File Server (SMB)
-- Group Policy (GPO)
-- Suporte técnico (N1/N2)
+Simular um ambiente real de TI com foco em Active Directory, DHCP, File Server, GPO e suporte técnico (N1/N2).
 
 ---
 
@@ -182,20 +176,9 @@ Acesso ao sistema restaurado após ajuste da política.
 
 ---
 
-#  Competências Desenvolvidas
-
-- Active Directory Administration  
-- DHCP Server Configuration  
-- File Server Management  
-- Group Policy (GPO)  
-- Troubleshooting de rede  
-- Suporte técnico em Windows Server  
-
----
-
 #  Conclusão
 
-Projeto desenvolvido em ambiente de laboratório, com fins de estudo, simulando uma infraestrutura corporativa de TI. Foram aplicados conceitos de DHCP, administração de redes e resolução de problemas de conectividade.
+Projeto desenvolvido em ambiente de laboratório com fins de estudo, simulando uma infraestrutura corporativa de TI. Foram aplicados conceitos de Active Directory, DHCP, File Server e GPO, além de práticas de troubleshooting de rede.
 
 ---
 
