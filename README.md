@@ -98,7 +98,7 @@ Correção da configuração do escopo DHCP e liberação de IP automático ao c
 ##  Resultado
 Conectividade com a internet restabelecida com sucesso.
 
-![Internet OK](img/dhcp/dhcp-05-internet-ok.png)
+![Internet OK](img/dhcp/dhcp-internet-ok.png)
 
 ---
 
