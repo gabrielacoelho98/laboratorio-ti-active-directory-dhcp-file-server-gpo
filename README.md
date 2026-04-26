@@ -1,10 +1,12 @@
-# 🖥️ Active Directory Lab — Infraestrutura de Rede
+#  Active Directory Lab — Infraestrutura de Rede
 
 Projeto de laboratório simulando um ambiente corporativo com Active Directory e serviços de infraestrutura de rede no Windows Server.
 
+Este projeto é uma **continuação de um ambiente de Active Directory previamente criado**, onde foi implementado um domínio base e usuários no diretório (`lab.local`), expandindo agora com serviços de rede e suporte técnico.
+
 ---
 
-# 🎯 Objetivo
+#  Objetivo
 
 Simular um ambiente real de TI com foco em:
 
@@ -16,7 +18,7 @@ Simular um ambiente real de TI com foco em:
 
 ---
 
-# 🧩 Tecnologias Utilizadas
+#  Tecnologias Utilizadas
 
 - Windows Server  
 - Active Directory Domain Services (AD DS)  
@@ -28,14 +30,15 @@ Simular um ambiente real de TI com foco em:
 
 ---
 
-COMANDOS UTILIZADOS:
+## COMANDOS UTILIZADOS:
 
-## 📡 DHCP
+##  DHCP
 
 - ipconfig
 - ipconfig /release
 - ipconfig /renew
 - ipconfig /all
+- ping google.com
 
 ---
 
@@ -51,10 +54,11 @@ COMANDOS UTILIZADOS:
 
 - gpupdate /force
 - gpresult /r
+- control
 
 ---
 
-# 📡 CHAMADO 01 — DHCP (Cliente sem IP)
+#  CHAMADO 01 — DHCP (Cliente sem IP)
 
 ## ⚙️ Pré-configuração do servidor
 
@@ -70,7 +74,7 @@ Configuração inicial do serviço DHCP no servidor.
 
 ---
 
-## 🟨 Criação do escopo
+##  Criação do escopo
 
 Criação do escopo DHCP responsável pela distribuição de IPs na rede.
 
@@ -78,107 +82,107 @@ Criação do escopo DHCP responsável pela distribuição de IPs na rede.
 
 ---
 
-## 🟥 Problema
+##  Problema
 Cliente sem endereço IP válido na rede.
 
 ![IP inválido](img/dhcp/dhcp-01-ip-invalido.png)
 
 ---
 
-## 🔍 Diagnóstico
+##  Diagnóstico
 Verificação do funcionamento do DHCP após criação do escopo.
 
 ---
 
-## 🟩 Solução
+##  Solução
 Correção da configuração do escopo DHCP e liberação de IP automático ao cliente.
 
 ![IP correto](img/dhcp/dhcp-04-ip-correto.png)
 
 ---
 
-## 🌐 Resultado
+##  Resultado
 Conectividade com a internet restabelecida com sucesso.
 
 ![Internet OK](img/dhcp/dhcp-05-internet-ok.png)
 
 ---
 
-# 📁 CHAMADO 02 — FILE SERVER (Acesso negado)
+#  CHAMADO 02 — FILE SERVER (Acesso negado)
 
-## 🟥 Problema
+##  Problema
 Usuário não conseguia acessar a pasta compartilhada.
 
 ![Problema](img/file-server/fs-02-erro-acesso.png)
 
 ---
 
-## 🔍 Diagnóstico
+##  Diagnóstico
 Permissões incorretas identificadas no compartilhamento.
 
 ![Diagnóstico](img/file-server/fs-01-acesso-negado.png)
 
 ---
 
-## 🟩 Solução
+##  Solução
 Correção das permissões da pasta compartilhada.
 
 ![Solução](img/file-server/permissoes-ok.png)
 
 ---
 
-## 📸 Complemento
+##  Complemento
 Validação do acesso pelo cliente.
 
 ![Cliente acesso](img/file-server/fs-03-acesso-cliente.png)
 
 ---
 
-## 📸 Resultado final
+## 📸Resultado final
 Acesso liberado com sucesso.
 
 ![Resultado](img/file-server/fs-05-acesso-ok.png)
 
 ---
 
-# 🔐 CHAMADO 03 — GPO (Bloqueio do Painel de Controle)
+#  CHAMADO 03 — GPO (Bloqueio do Painel de Controle)
 
-## 🟦 Situação inicial
+##  Situação inicial
 Usuário com restrição de acesso ao Painel de Controle.
 
 ![Situação inicial](img/gpo/gpo-04-bloqueio.png)
 
 ---
 
-## 🟥 Problema
+##  Problema
 Política de grupo aplicada bloqueando o acesso ao Painel de Controle.
 
 ![Problema](img/gpo/gpo-05-gpresult.png)
 
 ---
 
-## 🔍 Diagnóstico
+##  Diagnóstico
 Verificação da GPO aplicada no domínio.
 
 ![Diagnóstico](img/gpo/gpo-03-gpupdate.png)
 
 ---
 
-## 🟩 Solução
+##  Solução
 Correção da GPO e atualização das políticas no cliente.
 
 ![Solução](img/gpo/gpo-06-correcao.png)
 
 ---
 
-## 📸 Resultado
+##  Resultado
 Acesso ao sistema restaurado após ajuste da política.
 
 ![Resultado](img/gpo/gpo-07-funcionando.png)
 
 ---
 
-# 🧠 Competências Desenvolvidas
+#  Competências Desenvolvidas
 
 - Active Directory Administration  
 - DHCP Server Configuration  
@@ -189,16 +193,10 @@ Acesso ao sistema restaurado após ajuste da política.
 
 ---
 
-# 🏁 Conclusão
+#  Conclusão
 
-Projeto simula ambiente corporativo real de infraestrutura de TI com administração de servidores e resolução de incidentes.
+Projeto desenvolvido em ambiente de laboratório, com fins de estudo, simulando uma infraestrutura corporativa de TI. Foram aplicados conceitos de DHCP, administração de redes e resolução de problemas de conectividade.
 
 ---
 
-# 🚀 Resultado Final
 
-✔ Active Directory funcional  
-✔ DHCP configurado corretamente  
-✔ File Server operacional  
-✔ GPO aplicada com sucesso  
-✔ Projeto pronto para portfólio de estágio em TI  
